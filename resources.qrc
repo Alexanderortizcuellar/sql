@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="csv.png">images/csv.png</file>
+    <file alias="window-icon.png">images/database-icon-window.png</file>
+    <file alias="duckdb.png">images/duckdb.png</file>
+    <file alias="mariadb.png">images/mariadb.png</file>
+    <file alias="mongodb.png">images/mongodb.png</file>
+    <file alias="mysql.png">images/mysql.png</file>
+    <file alias="postgresql.png">images/postgresql.png</file>
+    <file alias="sqlite.png">images/sqlite.png</file>
+    <file alias="database.png">images/database.png</file>
+    <file alias="queries.png">images/queries.png</file>
+    <file alias="refresh.png">images/refresh.png</file>
+  </qresource>
+</RCC>

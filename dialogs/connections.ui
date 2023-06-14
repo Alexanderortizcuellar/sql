@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>417</width>
+    <height>293</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Connections</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_3">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frame_2">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>New Connection</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Import From Url</string>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_4">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="bottomMargin">
+          <number>3</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="frame_3">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+	color: rgb(106, 106, 106);
+}</string>
+              </property>
+              <property name="text">
+               <string>Connection Type</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="connection_type">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox {
+	border-radius:5px;
+	background-color: rgb(232, 232, 232);
+	border:1px solid rgb(159, 159, 159);
+	color:rgb(99, 99, 99);
+	padding:6px;
+}
+
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 12px;
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 5px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 5px;
+	background-color: rgb(122, 122, 122);
+	
+}
+
+
+QComboBox QAbstractItemView {
+	padding:6px;
+	color: rgb(95, 95, 95);
+	border:1px solid  rgb(159, 159, 159);
+}</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>SQLite</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../../../../icons/sqlite.png</normaloff>../../../../../../icons/sqlite.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>MySQL</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../../../../icons/mysql.png</normaloff>../../../../../../icons/mysql.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>PostgreSQL</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../../../../icons/postgresql.png</normaloff>../../../../../../icons/postgresql.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>MariaDB</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../../../../icons/mariadb.png</normaloff>../../../../../../icons/mariadb.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>MongoDB</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../../../../icons/mongodb.png</normaloff>../../../../../../icons/mongodb.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>DuckDB</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../../../../icons/duckdb.png</normaloff>../../../../../../icons/duckdb.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>CSV</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../../../../icons/csv.png</normaloff>../../../../../../icons/csv.png</iconset>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_5">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <property name="spacing">
+             <number>16</number>
+            </property>
+            <property name="bottomMargin">
+             <number>4</number>
+            </property>
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_cancel">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	border-radius:5px;
+	background-color:rgb(200, 200, 200);
+	font: 75 9pt &quot;MS Shell Dlg 2&quot;;
+	padding:5px 15px 5px 15px;
+	height:24px;
+	width:54;
+}
+
+QPushButton::hover {
+	border-radius:5px;
+	background-color:rgb(219, 219, 219) ;
+	font: 75 9pt &quot;MS Shell Dlg 2&quot;;
+	padding:5px 15px 5px 15px;
+	height:24px;
+	width:54;
+}
+
+QPushButton:pressed {
+	font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+	background-color:rgb(229, 229, 229) ;
+	padding:5px 15px 5px 15px;
+	border:1px solid rgb(200, 200, 200);
+	height:24px;
+	width:54;
+}
+
+</string>
+              </property>
+              <property name="text">
+               <string>Cancel</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_accept">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	border-radius:5px;
+	background-color:rgb(200, 200, 200);
+	font: 75 9pt &quot;MS Shell Dlg 2&quot;;
+	padding:5px 15px 5px 15px;
+	height:24px;
+	width:54;
+}
+
+QPushButton::hover {
+	border-radius:5px;
+	background-color:rgb(219, 219, 219) ;
+	font: 75 9pt &quot;MS Shell Dlg 2&quot;;
+	padding:5px 15px 5px 15px;
+	height:24px;
+	width:54;
+}
+
+QPushButton:pressed {
+	font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+	background-color:rgb(229, 229, 229) ;
+	padding:5px 15px 5px 15px;
+	border:1px solid rgb(200, 200, 200);
+	height:24px;
+	width:54;
+}</string>
+              </property>
+              <property name="text">
+               <string>Accept</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btn_cancel</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>257</x>
+     <y>207</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>168</x>
+     <y>242</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

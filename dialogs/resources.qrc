@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="/">
+    <file>icons/database-icon-window.png</file>
+    <file>icons/duckdb.png</file>
+    <file>icons/hidepassword.png</file>
+    <file>icons/mariadb.png</file>
+    <file>icons/mongodb.png</file>
+    <file>icons/mysql.png</file>
+    <file>icons/postgresql.png</file>
+    <file>icons/showpassword.png</file>
+    <file>icons/sqlite.png</file>
+  </qresource>
+</RCC>
